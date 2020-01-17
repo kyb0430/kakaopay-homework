@@ -1,0 +1,29 @@
+{
+  "name": "kakaopay-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykb0430/kakaopay-homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykb0430/kakaopay-homework/issues"
+  },
+  "homepage": "https://github.com/ykb0430/kakaopay-homework#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-webserver": "^0.9.1",
+    "del": "^4.1.1"
+  }
+}
