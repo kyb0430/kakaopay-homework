@@ -667,7 +667,7 @@ img {
     position: fixed;
     bottom: -100%;
     left: 0;
-    transition: bottom .3s; }
+    transition: bottom .2s; }
     .in .promotion-2 .btn-link {
       bottom: 0; }
     .out .promotion-2 .btn-link {
