@@ -1,3 +1,8 @@
+function init() {
+  $('.page-loading').hide();
+  $('body').addClass('init');
+}
+
 function scrollCheck() {
   var $window = $(window);
   var winHeight = $window.height();
@@ -26,11 +31,11 @@ function scrollMove() {
 
 $(function() {
   // page init
-  
-  window.setTimeout(function() {
-    $('.page-loading').hide();
-    $('body').addClass('init');
-  }, 1500);
+  if(window.location.hash === '') {
+    window.setTimeout(init, 1500);
+  } else {
+    init();
+  }
 
   // scroll check
   (function() {

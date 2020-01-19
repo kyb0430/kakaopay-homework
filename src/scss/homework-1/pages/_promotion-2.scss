@@ -1,3 +1,103 @@
+body { background-color: #59432B; }
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
 .promotion-2 {
-	
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #000;
+    position: relative;
+
+    .bg {
+        
+    }
+
+    .bg-top {
+        transform: translateY(-50%);
+
+        .in & {
+            transform: translateY(0);
+            animation-name: openContentTop;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+            
+            @keyframes openContentTop {
+                0%{ transform: translateY(-50%); }
+                20% { transform: translateY(0); }
+                45% { transform: translateY(-10%); }
+                60% { transform: translateY(0); }
+                85% { transform: translateY(-2%); }
+                100% { transform: translateY(0); }
+            }
+        }
+
+        .out & {
+            transition: all .05s;
+            transform: translateY(-100%);
+        }
+    }
+
+    .btn-close {
+        width: 20%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        a { display: block; }
+    }
+
+    .bg-bottom {
+        transform: translateY(50%);
+
+        .in & {
+            transform: translateY(0);
+            animation-name: openContentBottom;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+            
+            @keyframes openContentBottom {
+                0%{ transform: translateY(50%); }
+                20% { transform: translateY(0); }
+                45% { transform: translateY(10%); }
+                60% { transform: translateY(0); }
+                85% { transform: translateY(2%); }
+                100% { transform: translateY(0); }
+            }
+        }
+
+        .out & {
+            transition: all .05s;
+            transform: translateY(100%);
+        }
+    }
+
+    .btn-link {
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        transition: bottom .3s;
+
+        .in & {
+            bottom: 0;
+        }
+
+        .out & {
+            bottom: -100%;
+            transition: bottom .05s;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            min-width: 320px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+    }
 }
