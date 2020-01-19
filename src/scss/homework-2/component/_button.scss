@@ -1,0 +1,46 @@
+.btn {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 100px;
+    height: 38px;
+    line-height: 40px;
+    padding: 0 12px;
+    border: 1px solid #424342;
+    border-radius: 0;
+    background-color: #424342;
+    color: #fff;
+    font-family: "Malgun Gothic", "맑은 고딕";
+    font-size: 16px;
+    text-align: center;
+    vertical-align: top;
+
+    &.primary {
+        border-color: #e61e25;
+        background-color: #e61e25;
+    }
+
+    &.line {
+        background-color: #fff;
+        color: #424342;
+    }
+
+    &.line.primary {
+        color: #e61e25;
+    }
+
+    &.small {
+        min-width: 80px;
+        height: 28px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    &.large {
+        min-width: 120px;
+        height: 48px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    &.block { width: 100%; }
+}
