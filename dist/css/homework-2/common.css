@@ -148,7 +148,8 @@ input.textbox {
     border: 1px solid #424342;
     color: #424342;
     font-size: 16px;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
 
 select.select {
   box-sizing: border-box;
