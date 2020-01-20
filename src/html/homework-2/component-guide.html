@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>컴포넌트 가이드</title>
+    <title>Component Guide</title>
     <link rel="stylesheet" href="../../css/homework-2/common.css">
+    <style>
+        *{font-size:0;}
+        .wrapper{box-sizing:border-box;min-width:320px;max-width:1240px;padding:50px 20px;margin:0 auto;}
+        .wrapper .title{font-weight:600;font-size:50px;}
+        .wrapper .tit{margin-top:40px;font-weight:600;font-size:30px;}
+        .wrapper dl{padding:10px;}
+        .wrapper dt{font-weight:600;font-size:20px;}
+        .wrapper dt:not(:first-child){margin-top:10px;}
+    </style>
 </head>
 <body>
     <div class="wrapper">
-        <h1>Component Guide</h1>
-        <h2>INPUT</h2>
+        <h1 class="title">Component Guide</h1>
+
+        <h2 class="tit">INPUT</h2>
         <dl>
             <dt>Default</dt>
             <dd>
@@ -25,7 +35,8 @@
                 <input type="text" class="textbox" placeholder="Disabled" disabled>
             </dd>
         </dl>
-        <h2>SELECT</h2>
+
+        <h2 class="tit">SELECT</h2>
         <dl>
             <dt>Default</dt>
             <dd>
@@ -48,7 +59,8 @@
                 </select>
             </dd>
         </dl>
-        <h2>BUTTON</h2>
+
+        <h2 class="tit">BUTTON</h2>
         <dl>
             <dt>Default</dt>
             <dd>
@@ -67,6 +79,23 @@
                 <a href="#" class="btn line small">Small</a>
                 <a href="#" class="btn line">Default</a>
                 <a href="#" class="btn line large">Large</a>
+            </dd>
+        </dl>
+
+        <h2 class="tit">Checkbox</h2>
+        <dl>
+            <dt>Switch</dt>
+            <dd><label class="switch"><input type="checkbox" checked> <span>선택</span></label></dd>
+            <dt>Switch - Empty Text</dt>
+            <dd><label class="switch empty-txt"><input type="checkbox" checked> <span>선택</span></label></dd>
+        </dl>
+
+        <h2 class="tit">Radio Button</h2>
+        <dl>
+            <dt>Box</dt>
+            <dd>
+                <label class="radio-box"><input type="radio" name="radioBox" checked> <span>선택1</span></label>
+                <label class="radio-box"><input type="radio" name="radioBox"> <span>선택2</span></label>
             </dd>
         </dl>
     </div>

@@ -1,0 +1,29 @@
+.radio-box {
+	display: inline-block;
+	vertical-align: top;
+
+	input {
+		position: absolute;
+		left: -9999px;
+
+		&:checked ~ span {
+			background-color: #e61e25;
+			border-color: #e61e25;
+			color: #fff;
+		}
+	}
+
+	span {
+		box-sizing: border-box;
+		display: inline-block;
+		min-width: 100px;
+		height: 40px;
+		line-height: 38px;
+		padding: 0 10px;
+		background-color: #fff;
+		border: 1px solid #424342;
+		color: #424342;
+		font-size: 16px;
+		text-align: center;
+	}
+}

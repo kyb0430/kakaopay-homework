@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* reset.css */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -70,21 +69,17 @@ button {
   top: 0;
   left: -9999px; }
 
-html, body {
-  font-family: "Malgun Gothic", "맑은 고딕", Arial, Sans-serif; }
-
 .btn {
   box-sizing: border-box;
   display: inline-block;
   min-width: 100px;
-  height: 38px;
-  line-height: 40px;
+  height: 40px;
+  line-height: 38px;
   padding: 0 12px;
   border: 1px solid #424342;
   border-radius: 0;
   background-color: #424342;
   color: #fff;
-  font-family: "Malgun Gothic", "맑은 고딕";
   font-size: 16px;
   text-align: center;
   vertical-align: top; }
@@ -98,13 +93,13 @@ html, body {
     color: #e61e25; }
   .btn.small {
     min-width: 80px;
-    height: 28px;
-    line-height: 30px;
+    height: 30px;
+    line-height: 28px;
     font-size: 14px; }
   .btn.large {
     min-width: 120px;
-    height: 48px;
-    line-height: 50px;
+    height: 50px;
+    line-height: 48px;
     font-size: 20px; }
   .btn.block {
     width: 100%; }
@@ -113,7 +108,6 @@ input.textbox {
   box-sizing: border-box;
   min-width: 160px;
   height: 38px;
-  line-height: 18px;
   padding: 0 12px;
   border: 1px solid #ccc;
   background-color: #fff;
@@ -133,11 +127,33 @@ input.textbox {
   input.textbox.block {
     width: 100%; }
 
+.radio-box {
+  display: inline-block;
+  vertical-align: top; }
+  .radio-box input {
+    position: absolute;
+    left: -9999px; }
+    .radio-box input:checked ~ span {
+      background-color: #e61e25;
+      border-color: #e61e25;
+      color: #fff; }
+  .radio-box span {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #424342;
+    color: #424342;
+    font-size: 16px;
+    text-align: center; }
+
 select.select {
   box-sizing: border-box;
   min-width: 160px;
   height: 38px;
-  line-height: 18px;
   padding: 0 12px;
   border: 1px solid #ccc;
   background: #fff url("../../img/homework-2/select-arrow.png") no-repeat;
@@ -156,4 +172,51 @@ select.select {
     color: #bbb; }
   select.select.block {
     width: 100%; }
+
+label.switch {
+  display: inline-block;
+  vertical-align: top; }
+  label.switch.empty-txt span:before {
+    content: ''; }
+  label.switch.empty-txt input:checked ~ span:before {
+    content: ''; }
+  label.switch input {
+    position: absolute;
+    left: -50px; }
+    label.switch input:checked ~ span {
+      background-color: #e61e25;
+      text-align: right; }
+    label.switch input:checked ~ span:before {
+      content: 'ON'; }
+    label.switch input:checked ~ span:after {
+      left: 2px; }
+  label.switch span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 6px;
+    background-color: #757575;
+    border-radius: 12px;
+    font-size: 0;
+    text-align: left;
+    position: relative;
+    transition: all .3s; }
+    label.switch span:before {
+      content: 'OFF';
+      color: #fff;
+      font-size: 14px;
+      transition: all .3s; }
+    label.switch span:after {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 22px;
+      background-color: #fff;
+      border-radius: 11px;
+      position: absolute;
+      top: 2px;
+      left: calc(100% - 22px - 2px);
+      transition: all .3s; }
 /*# sourceMappingURL=common.css.map */
