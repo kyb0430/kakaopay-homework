@@ -1,9 +1,9 @@
 .btn {
     box-sizing: border-box;
     display: inline-block;
-    min-width: 100px;
-    height: 40px;
-    line-height: 38px;
+    min-width: 80px;
+    height: 38px;
+    line-height: 36px;
     padding: 0 12px;
     border: 1px solid #424342;
     border-radius: 0;
@@ -42,4 +42,61 @@
     }
 
     &.block { width: 100%; }
+}
+
+.btn-close {
+    display: inline-block;
+    width: 48px;
+    height: 0;
+    max-height: 0;
+    padding-top: 48px;
+    overflow: hidden;
+    background: url("../../img/homework-2/icon-close.png") no-repeat;
+    background-size: 32px 32px;
+    background-position: center center;
+
+    .page-title & {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+}
+
+.btn-menu {
+    display: inline-block;
+    width: 48px;
+    height: 0;
+    max-height: 0;
+    padding-top: 48px;
+    overflow: hidden;
+    background: url("../../img/homework-2/icon-menu.png") no-repeat;
+    background-size: 32px 32px;
+    background-position: center center;
+
+    .page-title & {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+}
+
+.btn-back {
+    display: inline-block;
+    width: 48px;
+    height: 0;
+    max-height: 0;
+    padding-top: 48px;
+    overflow: hidden;
+    background: url("../../img/homework-2/icon-back.png") no-repeat;
+    background-size: 32px 32px;
+    background-position: center center;
+
+    .page-title & {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
 }

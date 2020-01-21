@@ -1,4 +1,8 @@
 @import 'base/reset';
 @import 'base/com';
 
+@import 'layout/**/*.scss';
+
 @import 'component/**/*.scss';
+
+@import 'pages/**/*.scss';

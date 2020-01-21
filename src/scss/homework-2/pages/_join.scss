@@ -1,0 +1,37 @@
+.join-form {
+	.form-id input { width: 100%; }
+
+	.form-pw input { width: 100%; }
+
+	.form-gender .radio-box {
+		width: 50%;
+
+		span { width: 100%; }
+	}
+
+	.form-birth {
+		.select {
+			width: calc(100% - 10px);
+
+			&:not(:first-child) { margin-left: 5px; }
+		}
+	}
+
+	.form-tel {
+		display: flex;
+		flex-direction: row;
+
+		.select { margin-right: 5px; }
+		.textbox { flex-grow: 1; }
+		.btn { margin-left: 5px; }
+	}
+
+	.form-agree {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		margin-top: 50px;
+	}
+}
