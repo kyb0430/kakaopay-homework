@@ -11,7 +11,7 @@
     color: #fff;
     font-size: 16px;
     text-align: center;
-    vertical-align: top;
+    vertical-align: middle;
 
     &.primary {
         border-color: #e61e25;
@@ -23,9 +23,7 @@
         color: #424342;
     }
 
-    &.line.primary {
-        color: #e61e25;
-    }
+    &.line.primary { color: #e61e25; }
 
     &.small {
         min-width: 80px;
@@ -54,6 +52,7 @@
     background: url("../../img/homework-2/icon-close.png") no-repeat;
     background-size: 32px 32px;
     background-position: center center;
+    vertical-align: middle;
 
     .page-title & {
         position: absolute;
@@ -73,6 +72,7 @@
     background: url("../../img/homework-2/icon-menu.png") no-repeat;
     background-size: 32px 32px;
     background-position: center center;
+    vertical-align: middle;
 
     .page-title & {
         position: absolute;
@@ -92,6 +92,7 @@
     background: url("../../img/homework-2/icon-back.png") no-repeat;
     background-size: 32px 32px;
     background-position: center center;
+    vertical-align: middle;
 
     .page-title & {
         position: absolute;

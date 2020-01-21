@@ -138,7 +138,7 @@ body {
   color: #fff;
   font-size: 16px;
   text-align: center;
-  vertical-align: top; }
+  vertical-align: middle; }
   .btn.primary {
     border-color: #e61e25;
     background-color: #e61e25; }
@@ -169,7 +169,8 @@ body {
   overflow: hidden;
   background: url("../../img/homework-2/icon-close.png") no-repeat;
   background-size: 32px 32px;
-  background-position: center center; }
+  background-position: center center;
+  vertical-align: middle; }
   .page-title .btn-close {
     position: absolute;
     top: 50%;
@@ -186,7 +187,8 @@ body {
   overflow: hidden;
   background: url("../../img/homework-2/icon-menu.png") no-repeat;
   background-size: 32px 32px;
-  background-position: center center; }
+  background-position: center center;
+  vertical-align: middle; }
   .page-title .btn-menu {
     position: absolute;
     top: 50%;
@@ -203,7 +205,8 @@ body {
   overflow: hidden;
   background: url("../../img/homework-2/icon-back.png") no-repeat;
   background-size: 32px 32px;
-  background-position: center center; }
+  background-position: center center;
+  vertical-align: middle; }
   .page-title .btn-back {
     position: absolute;
     top: 50%;
@@ -220,7 +223,7 @@ input.textbox {
   background-color: #fff;
   color: #666;
   font-size: 16px;
-  vertical-align: top; }
+  vertical-align: middle; }
   input.textbox:focus {
     border-color: #424342;
     color: #212121;
@@ -236,7 +239,7 @@ input.textbox {
 
 .radio-box {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: middle; }
   .radio-box input {
     position: absolute;
     left: -9999px; }
@@ -283,7 +286,7 @@ select.select {
 
 label.switch {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: middle; }
   label.switch.empty-txt span:before {
     content: ''; }
   label.switch.empty-txt input:checked ~ span:before {
@@ -304,7 +307,7 @@ label.switch {
     width: 60px;
     height: 26px;
     line-height: 26px;
-    padding: 0 6px;
+    padding: 0 8px;
     background-color: #757575;
     border-radius: 12px;
     font-size: 0;
@@ -313,7 +316,10 @@ label.switch {
     transition: all .3s; }
     label.switch span:before {
       content: 'OFF';
+      display: inline-block;
       color: #fff;
+      height: 26px;
+      line-height: 26px;
       font-size: 14px;
       transition: all .3s; }
     label.switch span:after {

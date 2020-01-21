@@ -12,10 +12,6 @@ img {
     background-color: #000;
     position: relative;
 
-    .bg {
-        
-    }
-
     .bg-top {
         transform: translateY(-50%);
 
@@ -83,9 +79,7 @@ img {
         left: 0;
         transition: bottom .2s;
 
-        .in & {
-            bottom: 0;
-        }
+        .in & { bottom: 0; }
 
         .out & {
             bottom: -100%;
