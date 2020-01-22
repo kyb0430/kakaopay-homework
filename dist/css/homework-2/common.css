@@ -70,6 +70,35 @@ button {
   top: 0;
   left: -9999px; }
 
+/* Noto Sans KR */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/notosanskr/NotoSansKR-Light.woff2") format("woff2"), url("../font/notosanskr/NotoSansKR-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/notosanskr/NotoSansKR-Regular.woff2") format("woff2"), url("../font/notosanskr/NotoSansKR-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/notosanskr/NotoSansKR-Medium.woff2") format("woff2"), url("../font/notosanskr/NotoSansKR-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/notosanskr/NotoSansKR-Bold.woff2") format("woff2"), url("../font/notosanskr/NotoSansKR-Bold.woff") format("woff"); }
+
+html, body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400; }
+
 .form-row:not(:first-child) {
   margin-top: 10px; }
 
@@ -114,6 +143,7 @@ body {
     .wrapper .page-title .title {
       line-height: 60px;
       padding: 0 20px;
+      font-weight: 600;
       font-size: 20px;
       color: #101010;
       text-align: center; }
@@ -234,7 +264,7 @@ input.checkbox {
     font-size: 16px;
     position: relative; }
     input.checkbox + label:before {
-      content: "";
+      content: '';
       display: inline-block;
       width: 22px;
       height: 22px;
@@ -263,7 +293,7 @@ label.checkbox span {
   font-size: 16px;
   position: relative; }
   label.checkbox span:before {
-    content: "";
+    content: '';
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -338,7 +368,7 @@ input.radio {
     font-size: 16px;
     position: relative; }
     input.radio + label:before {
-      content: "";
+      content: '';
       display: inline-block;
       width: 22px;
       height: 22px;
@@ -367,7 +397,7 @@ label.radio > span {
   font-size: 16px;
   position: relative; }
   label.radio > span:before {
-    content: "";
+    content: '';
     display: inline-block;
     width: 22px;
     height: 22px;

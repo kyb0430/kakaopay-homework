@@ -2,9 +2,9 @@ input.radio {
 	position: absolute;
 	left: -9999px;
 
-	&:checked + label:before { background-image: url("../../img/homework-2/radio-check.png"); }
-	&[disabled] + label:before { background-image: url("../../img/homework-2/radio-uncheck-disable.png"); }
-	&[disabled]:checked + label:before { background-image: url("../../img/homework-2/radio-check-disable.png"); }
+	&:checked + label:before { background-image: url('../../img/homework-2/radio-check.png'); }
+	&[disabled] + label:before { background-image: url('../../img/homework-2/radio-uncheck-disable.png'); }
+	&[disabled]:checked + label:before { background-image: url('../../img/homework-2/radio-check-disable.png'); }
 
 	& + label {
 		display: inline-block;
@@ -15,11 +15,11 @@ input.radio {
 		position: relative;
 		
 		&:before {
-			content: "";
+			content: '';
 			display: inline-block;
 			width: 22px;
 			height: 22px;
-			background: url("../../img/homework-2/radio-uncheck.png") no-repeat;
+			background: url('../../img/homework-2/radio-uncheck.png') no-repeat;
 			background-size: 22px 22px;
 			background-position: center center;
 			position: absolute;
@@ -34,9 +34,9 @@ label.radio {
 		position: absolute;
 		left: -9999px;
 
-		&:checked + span:before { background-image: url("../../img/homework-2/radio-check.png"); }
-		&[disabled] + span:before { background-image: url("../../img/homework-2/radio-uncheck-disable.png"); }
-		&[disabled]:checked + span:before { background-image: url("../../img/homework-2/radio-check-disable.png"); }
+		&:checked + span:before { background-image: url('../../img/homework-2/radio-check.png'); }
+		&[disabled] + span:before { background-image: url('../../img/homework-2/radio-uncheck-disable.png'); }
+		&[disabled]:checked + span:before { background-image: url('../../img/homework-2/radio-check-disable.png'); }
 	}
 
 	> span {
@@ -48,11 +48,11 @@ label.radio {
 		position: relative;
 
 		&:before {
-			content: "";
+			content: '';
 			display: inline-block;
 			width: 22px;
 			height: 22px;
-			background: url("../../img/homework-2/radio-uncheck.png") no-repeat;
+			background: url('../../img/homework-2/radio-uncheck.png') no-repeat;
 			background-size: 22px 22px;
 			background-position: center center;
 			position: absolute;

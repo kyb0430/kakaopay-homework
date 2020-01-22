@@ -2,9 +2,9 @@ input.checkbox {
 	position: absolute;
 	left: -9999px;
 
-	&:checked + label:before { background-image: url("../../img/homework-2/checkbox-check.png"); }
-	&[disabled] + label:before { background-image: url("../../img/homework-2/checkbox-uncheck-disable.png"); }
-	&[disabled]:checked + label:before { background-image: url("../../img/homework-2/checkbox-check-disable.png"); }
+	&:checked + label:before { background-image: url('../../img/homework-2/checkbox-check.png'); }
+	&[disabled] + label:before { background-image: url('../../img/homework-2/checkbox-uncheck-disable.png'); }
+	&[disabled]:checked + label:before { background-image: url('../../img/homework-2/checkbox-check-disable.png'); }
 
 	& + label {
 		display: inline-block;
@@ -15,11 +15,11 @@ input.checkbox {
 		position: relative;
 
 		&:before {
-			content: "";
+			content: '';
 			display: inline-block;
 			width: 22px;
 			height: 22px;
-			background: url("../../img/homework-2/checkbox-uncheck.png") no-repeat;
+			background: url('../../img/homework-2/checkbox-uncheck.png') no-repeat;
 			background-size: 22px 22px;
 			background-position: center center;
 			position: absolute;
@@ -35,9 +35,9 @@ label.checkbox {
 		position: absolute;
 		left: -9999px;
 
-		&:checked + span:before { background-image: url("../../img/homework-2/checkbox-check.png"); }
-		&[disabled] + span:before { background-image: url("../../img/homework-2/checkbox-uncheck-disable.png"); }
-		&[disabled]:checked + span:before { background-image: url("../../img/homework-2/checkbox-check-disable.png"); }
+		&:checked + span:before { background-image: url('../../img/homework-2/checkbox-check.png'); }
+		&[disabled] + span:before { background-image: url('../../img/homework-2/checkbox-uncheck-disable.png'); }
+		&[disabled]:checked + span:before { background-image: url('../../img/homework-2/checkbox-check-disable.png'); }
 	}
 
 	span {
@@ -49,11 +49,11 @@ label.checkbox {
 		position: relative;
 
 		&:before {
-			content: "";
+			content: '';
 			display: inline-block;
 			width: 22px;
 			height: 22px;
-			background: url("../../img/homework-2/checkbox-uncheck.png") no-repeat;
+			background: url('../../img/homework-2/checkbox-uncheck.png') no-repeat;
 			background-size: 22px 22px;
 			background-position: center center;
 			position: absolute;
