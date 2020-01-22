@@ -29,8 +29,17 @@
 	.form-agree {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		margin-top: 50px;
+
+		dt, dd {
+			box-sizing: border-box;
+			min-height: 30px;
+			padding: 5px;
+		}
+
+		dt { width: calc(100% - 70px); }
 	}
 }

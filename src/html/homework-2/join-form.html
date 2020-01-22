@@ -6,6 +6,8 @@
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
 	<title>회원가입 | 사내 시스템</title>
 	<link rel="stylesheet" href="../../css/homework-2/common.css">
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/promotion-2.js"></script>
 </head>
 <body>
 	<div class="wrapper section-join">
@@ -18,6 +20,20 @@
 			<button type="button" class="btn-close">닫기</button>
 		</div>
 		<!-- 상단 타이틀영역 -->
+
+		<!-- 탭메뉴 -->
+		<ul class="page-tab">
+			<li>
+				<a href="#">STEP1</a>
+			</li>
+			<li class="on">
+				<a href="#">STEP2</a>
+			</li>
+			<li>
+				<a href="#">STEP3</a>
+			</li>
+		</ul>
+		<!-- 탭메뉴 -->
 
 		<!-- 본문영역 -->
 		<div class="page-content join-form">
@@ -128,6 +144,22 @@
 			</dl>
 
 			<dl class="form-agree">
+				<dt>
+					(필수) 개인정보 수집ㆍ이용에 동의합니다.
+				</dt>
+				<dd>
+
+					<label class="switch"><input type="checkbox" checked> <span>선택</span></label>
+
+				</dd>
+				<dt>
+					(선택) 마케팅/홍보를 위하여 귀하의 개인정보를 이용하는데 동의합니다.
+				</dt>
+				<dd>
+
+					<label class="switch"><input type="checkbox" checked> <span>선택</span></label>
+
+				</dd>
 				<dt>
 					모든 약관 내용에 동의 합니다.
 				</dt>

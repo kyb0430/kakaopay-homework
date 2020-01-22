@@ -1,23 +1,22 @@
 $(function() {
+  var $window = $(window);
+  var $body = $('body');
+  var currentTop = 0;
+
   // page init
-  $('body').addClass('init in');
+  $body.addClass('init');
 
-  // scroll check
-  (function() {
-    var $window = $(window);
+    $window.on('scroll', function() {
+      var scrollTop = $window.scrollTop();
+      var gap = scrollTop - currentTop;
 
-    $('.btn-close').on('click', 'a', function(e) {
-      e.preventDefault();
+      console.log(scrollTop >= 0)
+      if(gap > 0 && scrollTop >= 0) {
+        $body.addClass('scroll-down');
+      } else {
+        $body.removeClass('scroll-down');
+      }
 
-      var href = $(this).attr('href');
-
-      $('.init').addClass('out');
-
-      setTimeout(function() {
-        location.href = href;
-      },50)
+      currentTop = scrollTop;
     });
-
-    $('.scroll-check').addClass('ready');
-  })();
 });

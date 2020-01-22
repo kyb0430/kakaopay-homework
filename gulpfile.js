@@ -57,7 +57,7 @@ function styleBuild() {
 
 	.pipe(sass({
 		errLogToConsole: true,
-		outputStyle: 'nested' // nested, expanded, compact, or compressed.
+		outputStyle: 'compressed' // nested, expanded, compact, or compressed.
 	}).on('error', sass.logError))
 
 	.pipe(autoprefixer({

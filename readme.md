@@ -11,6 +11,9 @@
 - 회원가입 페이지 : https://kyb0430.github.io/kakaopay-homework/dist/html/homework-2/join-form.html
 - 레이아웃 페이지 : https://kyb0430.github.io/kakaopay-homework/dist/html/homework-2/@layout.html
 
+`기존 프로젝트 진행 시 Gulp로 빌드되는 './dist/html', './dist/css' 파일들은 gitignore 시키지만 해당 저장소 세팅이 불가 할 수 있다는 경우를 대비하여 저장소에 포함시키고 Pages로 웹호스팅 시켰습니다.`   
+`무료 웹호스팅이라 속도가 아주 느리다는 점 양해 부탁드립니다.`
+
 ## 프로젝트 가이드
 
 해당 저장소의 작업환경을 실행하기 위해서는 Git, Node.js가 설치되어 있어야 한다.  
