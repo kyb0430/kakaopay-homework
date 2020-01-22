@@ -33,8 +33,9 @@ D:\project\kakaopay-homework> npm install
 ```
 
 #### 3. npm start
-작업환경을 실행하기 위해 'npm start'명령어를 실행한다.
-웹브라우저 주소창에 'localhost:8000'을 입력하면 해당 작업의 빌드된 소스들을 확인할수 있다.
+작업환경을 실행하기 위해 'npm start'명령어를 실행한다.  
+웹브라우저 주소창에 `localhost:8000`을 입력하면 해당 작업의 빌드된 소스들을 확인할수 있다.  
+(포트번호는 `gulpfile.js`에서 수정가능)
 ```
 D:\project\kakaopay-homework> npm start
 ```
