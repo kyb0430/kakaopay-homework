@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="../../css/homework-2/common.css">
     <style>
         *{font-size:0;}
-        .wrapper{box-sizing:border-box;min-width:320px;max-width:1240px;padding:50px 20px;margin:0 auto;}
+        .wrapper{box-sizing:border-box;min-width:320px;max-width:1024px;;padding:50px 20px;margin:0 auto;}
         .wrapper .title{font-weight:600;font-size:50px;}
         .wrapper .tit{margin-top:40px;font-weight:600;font-size:30px;}
         .wrapper dl{padding:10px;}
         .wrapper dt{font-weight:600;font-size:20px;}
+        .wrapper dd{font-size:0;}
+        .wrapper dd>*{margin: 5px;}
         .wrapper dt:not(:first-child){margin-top:10px;}
     </style>
 </head>
@@ -82,20 +84,60 @@
             </dd>
         </dl>
 
-        <h2 class="tit">Checkbox</h2>
-        <dl>
-            <dt>Switch</dt>
-            <dd><label class="switch"><input type="checkbox" checked> <span>선택</span></label></dd>
-            <dt>Switch - Empty Text</dt>
-            <dd><label class="switch empty-txt"><input type="checkbox" checked> <span>선택</span></label></dd>
-        </dl>
-
         <h2 class="tit">Radio Button</h2>
         <dl>
+            <dt>Default (input+label)</dt>
+            <dd>
+                <input type="radio" name="radioSample" id="radioSample1" class="radio">
+				<label for="radioSample1">옵션1</label>
+				<input type="radio" name="radioSample" id="radioSample2" class="radio" checked>
+				<label for="radioSample2">옵션2</label>
+				<input type="radio" name="radioSample" id="radioSample3" class="radio" disabled checked>
+				<label for="radioSample3">옵션3</label>
+				<input type="radio" name="radioSample" id="radioSample4" class="radio" disabled>
+				<label for="radioSample4">옵션4</label>
+            </dd>
+            <dt>Default (label>input)</dt>
+            <dd>
+                <label class="radio"><input type="radio"> <span>옵션1</span></label>
+                <label class="radio"><input type="radio" checked> <span>옵션2</span></label>
+                <label class="radio"><input type="radio" disabled> <span>옵션3</span></label>
+                <label class="radio"><input type="radio" disabled checked> <span>옵션4</span></label>
+            </dd>
             <dt>Box</dt>
             <dd>
                 <label class="radio-box"><input type="radio" name="radioBox" checked> <span>선택1</span></label>
                 <label class="radio-box"><input type="radio" name="radioBox"> <span>선택2</span></label>
+            </dd>
+        </dl>
+
+        <h2 class="tit">Checkbox</h2>
+        <dl>
+            <dt>Default (input+label)</dt>
+            <dd>
+                <input type="checkbox" name="checkSample" id="checkSample1" class="checkbox" checked>
+                <label for="checkSample1">옵션1</label>
+                <input type="checkbox" name="checkSample" id="checkSample2" class="checkbox">
+                <label for="checkSample2">옵션2</label>
+                <input type="checkbox" name="checkSample" id="checkSample3" class="checkbox" disabled>
+                <label for="checkSample3">옵션3</label>
+                <input type="checkbox" name="checkSample" id="checkSample4" class="checkbox" disabled checked>
+                <label for="checkSample4">옵션4</label>
+            </dd>
+            <dt>Default (label>input)</dt>
+            <dd>
+                <label class="checkbox"><input type="checkbox" checked> <span>옵션1</span></label>
+                <label class="checkbox"><input type="checkbox"> <span>옵션2</span></label>
+                <label class="checkbox"><input type="checkbox" disabled> <span>옵션3</span></label>
+                <label class="checkbox"><input type="checkbox" disabled checked> <span>옵션4</span></label>
+            </dd>
+            <dt>Switch</dt>
+            <dd>
+                <label class="switch"><input type="checkbox" checked> <span>선택</span></label>
+            </dd>
+            <dt>Switch - Empty Text</dt>
+            <dd>
+                <label class="switch empty-txt"><input type="checkbox" checked> <span>선택</span></label>
             </dd>
         </dl>
     </div>

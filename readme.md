@@ -13,7 +13,7 @@
 
 ## 프로젝트 가이드
 
-해당 저장소의 작업환경을 실행하기 위해서는 Git, Node.js가 설치 되어 있어야한다.  
+해당 저장소의 작업환경을 실행하기 위해서는 Git, Node.js가 설치되어 있어야 한다.  
 Git설치주소 : https://git-scm.com  
 Node.js설치주소 : https://nodejs.org/en  
 (최신버전보다 권장버전을 다운로드 추천)  
