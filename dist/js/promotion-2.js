@@ -1,22 +1,23 @@
 $(function() {
-  var $window = $(window);
-  var $body = $('body');
-  var currentTop = 0;
-
   // page init
-  $body.addClass('init');
+  $('body').addClass('init in');
 
-    $window.on('scroll', function() {
-      var scrollTop = $window.scrollTop();
-      var gap = scrollTop - currentTop;
+  // scroll check
+  (function() {
+    var $window = $(window);
 
-      console.log(scrollTop >= 0)
-      if(gap > 0 && scrollTop >= 0) {
-        $body.addClass('scroll-down');
-      } else {
-        $body.removeClass('scroll-down');
-      }
+    $('.btn-close').on('click', 'a', function(e) {
+      e.preventDefault();
 
-      currentTop = scrollTop;
+      var href = $(this).attr('href');
+
+      $('.init').addClass('out');
+
+      setTimeout(function() {
+        location.href = href;
+      },50)
     });
+
+    $('.scroll-check').addClass('ready');
+  })();
 });
